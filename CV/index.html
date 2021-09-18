@@ -32,7 +32,7 @@
 
       .page2 {
           page-break-before: always;
-          margin-top: 30px;
+          margin-top: 50px;
       }
   </style>
   <style>
@@ -45,6 +45,10 @@
       h1 {
           font-size: 25px;
           margin-top: 0;
+      }
+
+      h2{
+          margin-top: 38px;
       }
 
       h4,
@@ -116,7 +120,8 @@
 
   </style>
   <style>
-      .projects {
+      .projects h2{
+          margin-top: 8px;
       }
 
       .projects p {
@@ -193,7 +198,8 @@
   <style>
       .openSource {}
 
-      .openSource>h2 {}
+      .openSource>h2 {
+      }
 
       .openSource header img {
           position: absolute;
@@ -295,7 +301,7 @@
 <body>
 <article>
   <header class="header">
-    <h2>谢天龙</h2>
+    <h2 style="margin-top: 8px">谢天龙</h2>
     <section class="bio">
       <div class="bio-left">
         <p>
@@ -337,11 +343,11 @@
   <section class="projects">
     <h2>项目经历</h2>
     <ol>
-
       <li>
         <header>
           <h3>物料管理系统</h3>
         </header>
+        <p class="overwriting">技术栈： Vue2全家桶 / webpack / axios / Element UI</p>
         <p class="overwriting">
           独立负责权限管理、新物料入库流程、物料管理等十余个子模块功能开发等模块开发与维护。
         </p>
@@ -349,10 +355,15 @@
         <p>配合Element UI和vxe-table组件库进行业务开发，根据业务需求进行修改以及二次封装。</p>
         <p>对公共组件、方法、模块封装等代码优化，<strong>webpack打包</strong> 压缩代码等优化。</p>
       </li>
+    </ol>
+  </section>
 
+  <section class="projects">
+    <h2>开源项目</h2>
+    <ol>
       <li>
         <header>
-          <h3>LOL风格UI</h3>
+          <h3>LOL风格UI库</h3>
           <span>
               <span class="state">适配移动端&PC：</span>
               <a href="https://github.com/TINGCYGF/react-hero-ting-ui">源码链接</a>
@@ -368,28 +379,6 @@
           </div>
           <div class="qr">
             <img src="./img/ReactUI.png" alt="">
-          </div>
-        </main>
-      </li>
-
-      <li>
-        <header>
-          <h3>TING UI</h3>
-          <span>
-              <span class="state">适配移动端&PC：</span>
-              <a href="https://github.com/TINGCYGF/vue3-ting-ui">源码链接</a>
-              <a href="https://tingcygf.gitee.io/ting-ui-vue3/#/">项目预览</a>
-          </span>
-        </header>
-        <main>
-          <div>
-            <p class="overwriting">技术栈： Vue3 / TypeScript / VueRouter / Vite / SCSS</p>
-            <p>TING组件库参照各种开源 UI 库思路，基于 <strong>Vue3</strong> 的简易 <strong>UI 组件库</strong> 。</p>
-            <p>封装了<strong>Switch</strong>、<strong>Button</strong>、<strong>Tabs</strong>、<strong>Grid</strong>、<strong>Toast</strong>、<strong>Collapse</strong>、<strong>Menu</strong>等组件。</p>
-            <p>大部分组件使用<strong>Composition API</strong> 、单文件组件、 <strong>Setup函数</strong> 写法, 并发布了 <strong>npm包</strong>。</p>
-          </div>
-          <div class="qr">
-            <img src="./img/vue3UI.png" alt="">
           </div>
         </main>
       </li>
@@ -429,24 +418,45 @@
         </main>
       </li>
 
-      <li class="page2">
+      <li>
         <header>
-          <h3>云笔记项目</h3>
+          <h3>基于Vue3 UI库</h3>
           <span>
-              <a href="https://github.com/TINGCYGF/vue-tingnote">源码私有</a>
-              <a href="https://tingcygf.gitee.io/vue-tingnote/#/login">项目预览</a>
-            </span>
+              <span class="state">适配移动端&PC：</span>
+              <a href="https://github.com/TINGCYGF/vue3-ting-ui">源码链接</a>
+              <a href="https://tingcygf.gitee.io/ting-ui-vue3/#/">项目预览</a>
+          </span>
         </header>
-        <p class="overwriting">技术栈： Vue2 / VueRouter / Vuex / webpack / Less / axios / Element UI</p>
-        <p>Ting Note是一款在线笔记项目，项目共包含 登录、笔记本管理、笔记管理、回收站等模块。</p>
-        <p>axios二次封装统一接口风格，Vuex全局状态管理、markdown一键预览。</p>
+        <main>
+          <div>
+            <p class="overwriting">技术栈： Vue3 / TypeScript / VueRouter / Vite / SCSS</p>
+            <p>TING组件库参照各种开源 UI 库思路，基于 <strong>Vue3</strong> 的简易 <strong>UI 组件库</strong> 。</p>
+            <p>封装了<strong>Switch</strong>、<strong>Button</strong>、<strong>Tabs</strong>、<strong>Grid</strong>、<strong>Toast</strong>、<strong>Collapse</strong>、<strong>Menu</strong>等组件。</p>
+            <p>大部分组件使用<strong>Composition API</strong> 、单文件组件、 <strong>Setup函数</strong> 写法, 并发布了 <strong>npm包</strong>。</p>
+          </div>
+          <div class="qr">
+            <img src="./img/vue3UI.png" alt="">
+          </div>
+        </main>
       </li>
+
+<!--      <li class="page2">-->
+<!--        <header>-->
+<!--          <h3>云笔记项目</h3>-->
+<!--          <span>-->
+<!--              <a href="https://github.com/TINGCYGF/vue-tingnote">源码私有</a>-->
+<!--              <a href="https://tingcygf.gitee.io/vue-tingnote/#/login">项目预览</a>-->
+<!--            </span>-->
+<!--        </header>-->
+<!--        <p class="overwriting">技术栈： Vue2 / VueRouter / Vuex / webpack / Less / axios / Element UI</p>-->
+<!--        <p>Ting Note是一款在线笔记项目，项目共包含 登录、笔记本管理、笔记管理、回收站等模块。</p>-->
+<!--        <p>axios二次封装统一接口风格，Vuex全局状态管理、markdown一键预览。</p>-->
+<!--      </li>-->
     </ol>
   </section>
 
-
   <section class="openSource">
-    <h2>开源项目</h2>
+    <h2 class="page2">简易库</h2>
     <ul>
       <li>
         <header>
@@ -478,7 +488,7 @@
         <li>熟悉 <strong>React + React Hooks + TypeScript</strong> 的使用，掌握Redux、自定义Hook状态管理等</li>
         <li>了解Node.js API，掌握<strong>NestJS</strong>搭建后端程序，搭建并使用TypeORM 操作 MySQL 数据库</li>
         <li>了解UMD / CommonJS / ES6-Modules 模块化规范，掌握 <strong>webpack打包优化</strong> 配置，了解Vite等打包工具</li>
-        <li>了解前端性能优化策略，了解前端处理安全问题。</li>
+        <li>了解前端性能优化策略，了解前端处理安全问题</li>
       </ul>
     </div>
   </section>
@@ -489,16 +499,15 @@
       <li>
         <header>
           <h4>广东华美骏达电器有限公司</h4>
-          <span><time>2020年11月</time>~<time>至今</time></span>
+          <span><time>20年11月</time>~<time>21年7月</time></span>
         </header>
         <ul>
           <li>
-            独立负责物料管理系统前端部分开发与维护。
+            独立负责物料管理系统前端部分开发与维护
           </li>
           <li>
-            负责ERP系统维护与外包对接
+            负责ERP系统维护与项目对接
           </li>
-
         </ul>
       </li>
     </ol>
